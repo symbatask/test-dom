@@ -21,6 +21,7 @@ btn3.addEventListener("click", () =>{
 })
 
 
+
 input.addEventListener("input", () =>{
     if(currentEffect==="blur") blur()
 
