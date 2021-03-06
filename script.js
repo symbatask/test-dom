@@ -2,8 +2,8 @@
 let btn1 = document.querySelector(".btn1")
 let btn2 = document.querySelector(".btn2")
 let btn3 = document.querySelector(".btn3")
-let myImg = document.querySelector(".myImg")
-let input = document.querySelector(".input")
+let myImg = document.querySelector(".myImg img")
+let input = document.querySelector(".inputValue input")
 
 let currentEffect
 
@@ -11,13 +11,13 @@ let currentEffect
 
 
 btn1.addEventListener("click", () =>{
-    myImg.style.filter = "blur()";
+   blur()
 })
 btn2.addEventListener("click", () =>{
-    myImg.style.filter = "sepia()";
+  sepiaEffect()
 })
 btn3.addEventListener("click", () =>{
-    myImg.style.filter = "invert()";
+    invertEffect()
 })
 
 
@@ -26,7 +26,7 @@ input.addEventListener("input", () =>{
 
     if(currentEffect==="sepia") sepiaEffect()
 
-    if(currentEffect==="blur") invertEffect()
+    if(currentEffect==="invert") invertEffect()
 
 
 })
@@ -59,11 +59,4 @@ invertEffect()
 
 
 
-//
-// function generateShadow(){
-//     let property = `${horizontal.value}px ${vertical.value}px ${spread.value}px ${blur.value}px ${color.value}`
-//     box.style.boxShadow = property
-//     box_shadow_code.textContent = `box-shadow:${property};`
-// }
-//
-// generateShadow()
+
